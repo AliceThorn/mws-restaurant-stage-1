@@ -51,9 +51,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  height: 60px;
   background-color: #252831;
   text-align:center;
+	padding-top: 30px;
 }
 nav h1 {
   margin: auto;
@@ -109,6 +110,7 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
+	padding-bottom: 30px;
 }
 .filter-options h2 {
   color: white;
@@ -116,6 +118,7 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+	padding-top: 10px;
 }
 .filter-options select {
   background-color: white;
@@ -136,6 +139,10 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -274,36 +281,35 @@ nav h1 a {
   color: #666;
 }
 /* =======================  Media Queries =================== */
+
 @media screen and (min-width: 900px) {
-    body {
-			#restaurant-container {
-				display:inline-block;
-				margin-right:10px;}
-			#element2 {
-				display:inline-block;
-			};
-    }
-}
+			#restaurants-list li {
 
-@media screen and (max-width: 600px) {
-    body {
-			li {
-				display:inline-block;
-				margin-right:10px;}
-			#element2 {
-				display:inline-block;
-			};
-    }
-}
-
-@media screen and (max-width: 350px) {
-    body {
-			#restaurant-container {
-				display:inline-block;
-				margin-right:10px;}
-			#element2 {
-				display:inline-block;
 			}
-      background-color: lightgreen;
-    }
-}
+    };
+
+
+@media screen and (max-width: 600px ) {
+  #restaurants-list li {
+
+		}
+	};
+
+		@media screen and (max-width: 450px) {
+		  #restaurants-list li {
+
+				padding: 0 40px 40px 40px;
+				margin:15px 10px 30px 10px;
+				width: 90%;
+			}
+			li a{
+				font-size:21pt
+			}
+			li p{
+				font-size:18pt
+			}
+
+			.fiter-options{
+				font-size: 15pt;
+			}
+		};
