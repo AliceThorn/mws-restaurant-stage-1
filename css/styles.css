@@ -276,19 +276,34 @@ nav h1 a {
 /* =======================  Media Queries =================== */
 @media screen and (min-width: 900px) {
     body {
-			/*#restaurant-container {display:inline-block;margin-right:10px;}
-//#element2 {display:inline-block;};*/
+			#restaurant-container {
+				display:inline-block;
+				margin-right:10px;}
+			#element2 {
+				display:inline-block;
+			};
     }
 }
 
 @media screen and (max-width: 600px) {
     body {
-        ;
+			li {
+				display:inline-block;
+				margin-right:10px;}
+			#element2 {
+				display:inline-block;
+			};
     }
 }
 
 @media screen and (max-width: 350px) {
     body {
-        /* background-color: lightgreen;*/
+			#restaurant-container {
+				display:inline-block;
+				margin-right:10px;}
+			#element2 {
+				display:inline-block;
+			}
+      background-color: lightgreen;
     }
 }
