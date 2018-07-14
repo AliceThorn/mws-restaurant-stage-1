@@ -55,6 +55,8 @@ nav {
   background-color: #252831;
   text-align:center;
 	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
 }
 nav h1 {
   margin: auto;
@@ -111,6 +113,8 @@ nav h1 a {
   background-color: #3397DB;
   align-items: center;
 	padding-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .filter-options h2 {
   color: white;
@@ -282,34 +286,34 @@ nav h1 a {
 }
 /* =======================  Media Queries =================== */
 
-@media screen and (min-width: 900px) {
-			#restaurants-list li {
+@media screen and (max-width: 350px) {
+	#restaurants-list li {
 
-			}
-    };
+		padding: 0 40px 40px 40px;
+		margin:15px 10px 30px 10px;
+		max-width: 90%;
+	}
+	li a{
+		font-size:21pt
+	}
+	li p{
+		font-size:18pt
+	}
 
+	.fiter-options{
+		font-size: 15pt;
+	}
+};
 
-@media screen and (max-width: 600px ) {
+@media screen and (min-width: 450px ) {
   #restaurants-list li {
-
+		max-width: 50%;
+    justify-content: center;
 		}
 	};
 
-		@media screen and (max-width: 450px) {
-		  #restaurants-list li {
-
-				padding: 0 40px 40px 40px;
-				margin:15px 10px 30px 10px;
-				width: 90%;
+@media screen and (min-width: 750px) {
+			#restaurants-list li {
+max-width: 300px;
 			}
-			li a{
-				font-size:21pt
-			}
-			li p{
-				font-size:18pt
-			}
-
-			.fiter-options{
-				font-size: 15pt;
-			}
-		};
+    };
