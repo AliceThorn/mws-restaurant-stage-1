@@ -19,9 +19,8 @@
       <div id="map" aria-label="google-maps-area" role="application"></div>
     </section>
     <section>
-      <div class="filter-results">
+      <div class="filter-options">
         <h2>Filter Results</h2>
-        <div class="filter-options">
         <label for="neighborhoods-select" id="neighborhood-label">Neighborhoods</label>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
@@ -30,7 +29,6 @@
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
-        </div>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
