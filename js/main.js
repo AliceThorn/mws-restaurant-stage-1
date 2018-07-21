@@ -177,8 +177,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 }
 
-//iframe title added to google maps as per dicussion on https://stackoverflow.com/questions/49012240/google-maps-js-iframe-title
-google.maps.event.addListenerOnce(map, 'idle', () => {
+/*iframe title added to google maps as per dicussion on https://stackoverflow.com/questions/49012240/google-maps-js-iframe-title
+google. maps.event.addListenerOnce(map, 'idle', () => {
   document.getElementsByTagName('iframe')[0].title = "Google Maps";
-})
+})*/
 //AIzaSyAJUiMhholTw_vYwb56SlsvfdbKYvfsVwI

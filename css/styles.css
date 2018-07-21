@@ -38,6 +38,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+	max-width: 1402;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
 }
 #footer {
   background-color: #444;
@@ -50,10 +54,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
-	display: flex;
-	flex-direction: row;
   text-align:center;
-  width: 100%;
+  /*width: 100%;*/
   height: 80px;
   background-color: #252831;
 }
@@ -102,12 +104,12 @@ nav h1 a {
 /* ====================== Map ====================== */
 #map {
   height: 400px;
-  width: 100%;
+  /* width: 100%; */
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
+  /*width: 100%;*/
   height: 50px;
   background-color: #3397DB;
   align-items: center;
@@ -153,15 +155,14 @@ nav h1 a {
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
+  /*width: 270px;*/
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
-  max-width: 100%;
+  /*max-width: 100%;*/
   min-height: 248px;
-  min-width: 100%;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -281,27 +282,50 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-/* =======================  Media Queries =================== *
+/* =======================  Media Queries =================== */
 @media screen and (min-width: 900px) {
-    body {
-			#restaurant-container {
-				display:inline-block;
-				margin-right:10px;
+
+			#restaurant-list-li {
+				max-width: 300px;
 			}
-			#element2 {
-				display:inline-block;
-			};
+			.nav {
+				max-width: 100%;
+			}
+			#map {
+				max-width: 100%;
+			}
+			.filter-options {
+				max-width: 100%;
+			}
     }
-}
 
-@media screen and (max-width: 600px) {
-    body {
-        ;
-    }
-}
+@media screen and (max-width: 700px) {
+			#restaurant-list-li {
+				max-width: 50%;
+			}
+			.nav {
+				max-width: 75%;
+			}
+			#map {
+				max-width: 75%;
+			}
+			.filter-options {
+				max-width: 75%;
+			}
+	}
 
-@media screen and (max-width: 350px) {
-    body {
-        /* background-color: lightgreen;*/
-    }
-}
+@media screen and (max-width: 450px) {
+			#restaurant-list-li {
+				max-width: 100%;
+			}
+			.nav {
+				max-width: 50%;
+			}
+			#map {
+				max-width: 50%;
+			}
+			.filter-options {
+				max-width: 50%;
+			}
+
+		}
