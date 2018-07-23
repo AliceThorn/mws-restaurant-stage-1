@@ -1,24 +1,24 @@
 var staticCache = 'restaurant-cache-v1';
 var urlsToCache = [
     '/',
-    '/index.html',
-    '/restaurant.html',
-    '/css/styles.css',
-    '/data/restaurants.json',
-    '/js/dbhelper.js',
-    '/js/main.js',
-    '/register.js',
-    '/js/restaurant_info.js',
-    '/img/1.jpg',
-    '/img/2.jpg',
-    '/img/3.jpg',
-    '/img/4.jpg',
-    '/img/5.jpg',
-    '/img/6.jpg',
-    '/img/7.jpg',
-    '/img/8.jpg',
-    '/img/9.jpg',
-    '/img/10.jpg'
+    'https://alicethorn.github.io/mws-restaurant-stage-1/index.html',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/restaurant.html',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/css/styles.css',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/data/restaurants.json',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/js/dbhelper.js',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/js/main.js',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/register.js',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/js/restaurant_info.js',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/1.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/2.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/3.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/4.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/5.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/6.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/7.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/8.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/9.jpg',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/img/10.jpg'
 ];
 
 self.addEventListener('install', function(event) {
