@@ -1,4 +1,4 @@
-var staticCache = 'restaurant-cache-v1';
+var staticCache = `restaurant-cache-v1`;
 var urlsToCache = [
     'https://alicethorn.github.io/mws-restaurant-stage-1/',
     'https://alicethorn.github.io/mws-restaurant-stage-1/index.html',
@@ -52,7 +52,7 @@ self.addEventListener('activate', function(event) {
         caches.keys().then(function(keys) {
             return Promise.all(
                 keys.filter(function(key) {
-                    return !key.startsWith('restaurant-');
+                    return !key.startsWith(`restaurant-`);
                 }))
             map(function(key) {
                 return caches.delete(key);
