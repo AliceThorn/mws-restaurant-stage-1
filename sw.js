@@ -1,6 +1,6 @@
 var staticCache = 'restaurant-cache-v1';
 var urlsToCache = [
-    '/',
+    'https://alicethorn.github.io/mws-restaurant-stage-1/',
     'https://alicethorn.github.io/mws-restaurant-stage-1/index.html',
     'https://alicethorn.github.io/mws-restaurant-stage-1/restaurant.html',
     'https://alicethorn.github.io/mws-restaurant-stage-1/css/styles.css',
