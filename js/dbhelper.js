@@ -8,15 +8,18 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
 
+   /*
+   *Info needed for Github Pages
    static get DATABASE_URL() {
 
     return `https://alicethorn.github.io/mws-restaurant-stage-1/data/restaurants.json`;
   }
-/*  static get DATABASE_URL() {
+  */
+
+  static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
     return `http://localhost:${port}/data/restaurants.json`;
   }
-*/
   /**
    * Fetch all restaurants.
    */
@@ -155,8 +158,14 @@ class DBHelper {
    * Restaurant image URL.
    */
    static imageUrlForRestaurant(restaurant) {
+     return (`/img/${restaurant.photograph}`);
+    }
+   /*
+   Info needed for github pages
+   static imageUrlForRestaurant(restaurant) {
      return (`https://alicethorn.github.io/mws-restaurant-stage-1/img/${restaurant.photograph}`);
    }
+   */
 
   /**
    * Map marker for a restaurant.
